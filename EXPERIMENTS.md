@@ -17,9 +17,9 @@ table, marked "no", and the next step builds on the last one that did.
 
 | # | change | why I expected it to help | config | fold 0 | fold 1 | fold 2 | fold 3 | out-of-fold | kept? |
 |---|---|---|---|---|---|---|---|---|---|
-| 0 | the reference, your own run (about 0.194) | | `configs/reference.yaml` | | | | | | yes |
-| 1 | | | | | | | | | |
-| 2 | | | | | | | | | |
+| 0 | the reference, your own run (about 0.22025) | | `configs/reference.yaml` | | | | | | yes |
+| 1 | lr1e-3 | Tried a different config | 'configs/lr1e-3.yaml`| 0.1843 | 0.1960 | 0.2316 | 0.1840 | 0.2013| Yes |
+| 2 |adds droput| minimal dropout for regularization | 'configs/my_try.yaml` | 0.1828 | 0.1875 | 0.2263 | 0.1790 | 0.1963 |Yes |
 | 3 | | | | | | | | | |
 | 4 | | | | | | | | | |
 
